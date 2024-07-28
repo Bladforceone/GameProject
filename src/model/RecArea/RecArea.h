@@ -2,7 +2,7 @@
 // Created by Nikita Krylskii.
 //
 
-#include "Point/Point.h"
+#include "../Point/Point.h"
 #ifndef TEST_GAME_RECAREA_H
 #define TEST_GAME_RECAREA_H
 

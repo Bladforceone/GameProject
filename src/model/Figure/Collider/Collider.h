@@ -3,6 +3,8 @@
 //
 
 #include <algorithm>
+#include <vector>
+#include "iostream"
 #include "../Figure.h"
 #ifndef TEST_GAME_COLLIDER_H
 #define TEST_GAME_COLLIDER_H
