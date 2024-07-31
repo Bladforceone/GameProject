@@ -11,8 +11,6 @@ class Sprite : public GameObject {
 public:
     Sprite();
 
-    virtual void update() = 0;
-
 private:
     int HealthPoint{}; //По умолчанию 100хп
 protected:

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.23)
 project(GameProject)
 
 set(CMAKE_CXX_STANDARD 26)
@@ -28,7 +28,11 @@ add_executable(GameProject src/main.cpp
         src/view/Window.h
         src/view/Window.cpp
         src/view/ButtonChecker.h
-        src/view/ButtonChecker.cpp src/model/Point/Point.cpp src/model/Point/Point.h src/model/RecArea/RecArea.cpp src/model/RecArea/RecArea.h src/model/Figure/Figure.cpp src/model/Figure/Figure.h src/model/Figure/Collider/Collider.cpp src/model/Figure/Collider/Collider.h)
+        src/view/ButtonChecker.cpp src/model/Point/Point.cpp src/model/Point/Point.h src/model/RecArea/RecArea.cpp src/model/RecArea/RecArea.h src/model/Figure/Figure.cpp src/model/Figure/Figure.h src/model/Figure/Collider/Collider.cpp src/model/Figure/Collider/Collider.h
+        src/controller/GameController.h
+        src/controller/GameController.cpp
+        src/controller/GameWorld.h
+        src/controller/GameWorld.cpp)
 
 # Найти и подключить компоненты SFML
 find_package(SFML COMPONENTS graphics audio REQUIRED)

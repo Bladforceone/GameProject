@@ -10,6 +10,7 @@
 class GameObject : public Object{
 public:
     GameObject();
+    virtual void update() = 0;
 private:
     Figure* colider;
     RecArea* recArea;
