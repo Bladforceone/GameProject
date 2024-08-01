@@ -4,8 +4,8 @@
 #ifndef TEST_GAME_GAMEOBJECT_H
 #define TEST_GAME_GAMEOBJECT_H
 #include "../Object.h"
-#include "../Figure/Figure.h"
-#include "../RecArea/RecArea.h"
+#include "../MathLogic/Figure//Figure.h"
+#include "../MathLogic/RecArea/RecArea.h"
 
 class GameObject : public Object{
 public:

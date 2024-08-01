@@ -2,7 +2,7 @@
 // Created by Nikita Krylskii.
 //
 
-#include "../Point/Point.h"
+#include "../../MathLogic/Point/Point.h"
 #ifndef TEST_GAME_FIGURE_H
 #define TEST_GAME_FIGURE_H
 

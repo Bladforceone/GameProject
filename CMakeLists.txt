@@ -27,7 +27,14 @@ add_executable(GameProject src/main.cpp
         src/view/ObjectView.cpp
         src/view/Window.h
         src/view/Window.cpp
-        src/model/Point/Point.cpp src/model/Point/Point.h src/model/RecArea/RecArea.cpp src/model/RecArea/RecArea.h src/model/Figure/Figure.cpp src/model/Figure/Figure.h src/model/Figure/Collider/Collider.cpp src/model/Figure/Collider/Collider.h
+        src/model/MathLogic/Point/Point.cpp
+        src/model/MathLogic/Point/Point.h
+        src/model/MathLogic/RecArea/RecArea.cpp
+        src/model/MathLogic/RecArea/RecArea.h
+        src/model/MathLogic/Figure/Figure.cpp
+        src/model/MathLogic/Figure/Figure.h
+        src/model/MathLogic/Figure/Collider/Collider.cpp
+        src/model/MathLogic/Figure/Collider/Collider.h
         src/controller/GameController.h
         src/controller/GameController.cpp
         src/controller/GameWorld.h
