@@ -8,9 +8,9 @@ GameController::GameController() {
 
 }
 
-void GameController::game_cicle() {
-    ModelObjects->update_state();
-    ModelObjects->update_view();
+void GameController::gameCicle() {
+    modelObjects->update_state();
+    modelObjects->update_view();
 }
 
 GameController::GameController(GameWorld *OtherModelObjects, GameView *OtherViewObjects) {
@@ -18,6 +18,6 @@ GameController::GameController(GameWorld *OtherModelObjects, GameView *OtherView
 }
 
 void GameController::update() {
-    game_cicle();
+    gameCicle();
 }
 

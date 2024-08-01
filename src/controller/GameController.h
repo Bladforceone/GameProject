@@ -17,13 +17,13 @@ public:
     GameController();
     GameController(GameWorld* OtherModelObjects, GameView* OtherViewObjects);
 
-    void game_cicle();
+    void gameCicle();
 
     void update() override;
 
 private:
-    GameWorld* ModelObjects;
-    GameView* ViewObjects;
+    GameWorld* modelObjects;
+    GameView* viewObjects;
     float time;
 };
 
