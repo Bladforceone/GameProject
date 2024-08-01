@@ -11,7 +11,7 @@ class Object {
 public:
     Object();
 
-protected:
+
     int getTag() const;
 
     void setTag(int tag);
