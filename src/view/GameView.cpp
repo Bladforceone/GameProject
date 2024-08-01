@@ -4,17 +4,23 @@
 
 #include "GameView.h"
 
-GameView::GameView() {
-}
-
-const std::map<int, ObjectView *> &GameView::getStackView() const {
-    return stack_view;
-}
-
-void GameView::setStackView(const std::map<int, ObjectView *> &stackView) {
-    stack_view = stackView;
-}
-
 unsigned int GameView::CheckButtons() {
-    return buttonChecker->CheckButton();
+    unsigned int mask;
+    sf::Event event;
+    if (event.key.code == sf::Keyboard::A) {
+        mask |= UpButton;
+    }
+    if (event.key.code == sf::Keyboard::L) {
+        mask |= LeftButton;
+    }
+    if (event.key.code == sf::Keyboard::D) {
+        mask |= DownButton;
+    }
+    if (event.key.code == sf::Keyboard::R) {
+        mask |= RightButton;
+    }
+    if (event.key.code == sf::Keyboard::Escape) {
+        mask |= EscButton;
+    }
+    return mask;
 }

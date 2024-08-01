@@ -12,25 +12,25 @@ public:
     Point();
     Point(double xy);
     Point(double x, double y);
-    Point(Point& _point);
+    Point(const Point& _point);
 
     // Destructors
     ~Point();
 
     // Getters && Setters
-    double getPointX() const;
-    void setPointX(double pointX);
-    double getPointY() const;
-    void setPointY(double pointY);
+    double getX() const;
+    void setX(double X);
+    double getY() const;
+    void setY(double Y);
 
     //Methods
-    double Distance_to_koordinate(double x, double y);
-    double Distance_to_point(Point _point);
-    double Distance_to_zero();
+    double distanceToCoordinate(double x, double y);
+    double distanceToPoint(Point point);
+    double distanceToZero();
 
 private:
-    double point_x;
-    double point_y;
+    double x;
+    double y;
 };
 
 #endif //TEST_GAME_POINT_H

@@ -13,7 +13,6 @@ public:
     virtual void update() = 0;
 private:
     Figure* colider;
-    RecArea* recArea;
 };
 
 

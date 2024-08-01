@@ -1,15 +1,14 @@
 //
 // Created by Vladislav
 //
-
-#ifndef TEST_GAME_OBJECTVIEW_H
-#define TEST_GAME_OBJECTVIEW_H
 #include "SFML/Graphics/Sprite.hpp"
 
-class ObjectView : sf::Sprite{
+class ObjectView : public sf::Sprite{
 public:
     ObjectView();
+protected:
+    unsigned int getTag() const;
+    void setTag(unsigned int tag);
+private:
+    unsigned int tag;
 };
-
-
-#endif //TEST_GAME_OBJECTVIEW_H

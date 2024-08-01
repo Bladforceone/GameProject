@@ -4,8 +4,7 @@
 
 #ifndef MAINCONTROLLER_H
 #define MAINCONTROLLER_H
-
-
+#include "../main.cpp"
 
 class MainController {
 public:
